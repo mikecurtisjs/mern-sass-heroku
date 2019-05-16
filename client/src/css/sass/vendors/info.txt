@@ -1,0 +1,4 @@
+|– vendors/
+|   |– _bootstrap.scss   # Bootstrap
+|   |– _jquery-ui.scss   # jQuery UI
+|   ...                  # Etc…

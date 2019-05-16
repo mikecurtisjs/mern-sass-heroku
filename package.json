@@ -1,0 +1,23 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "Boilerplate MongoDB Express React Node & Sass",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "npm run start --prefix client",
+    "scss": "npm run scss --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\" \"npm run scss\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Michael Curtis",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^4.13.17",
+    "npm": "^6.5.0",
+    "path": "^0.12.7"
+  }
+}
